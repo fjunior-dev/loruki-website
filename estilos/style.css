@@ -17,6 +17,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden; 
 }
 
 ul {
@@ -135,7 +136,7 @@ img {
 /* Stats */
 
 .stats {
-    padding: 100px;
+    padding-top: 100px;
 }
 
 .stats .stats-heading {
@@ -312,3 +313,54 @@ img {
     margin: 0 10px;
 }
 
+/* Tablets and under */
+@media (max-width: 768px) {
+    .grid,
+    .form .grid,
+    .stats .grid,
+    .print .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .hero-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .print .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    }
+
+    .print {
+        
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgb(0, 0, 0, 0.1);
+    }
+
+}
