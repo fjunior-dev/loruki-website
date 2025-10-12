@@ -81,3 +81,21 @@
 .p-5 {
     padding: 4rem;
 }
+
+/* Alerts */
+
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-sucess {
+    background-color: var(--sucess-color);
+    color: #fff;
+}
