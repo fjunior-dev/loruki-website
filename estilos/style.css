@@ -124,6 +124,20 @@ img {
     left: 0;
     background: #fff;
     transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+
+.stats {
+    padding: 100px;
+}
+
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
 }
 
 /* Utilities */
@@ -164,6 +178,10 @@ img {
     transition: 0.5s;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -179,3 +197,9 @@ img {
     align-items: center;
     height: 100%;
 }
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
