@@ -99,6 +99,10 @@ code, pre {
     overflow: visible;
 }
 
+.hero-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
 .hero-form {
     position: relative;
     top: 60px;
@@ -107,6 +111,7 @@ code, pre {
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
 }
 
 .hero-form .form-control {
@@ -145,6 +150,7 @@ code, pre {
 
 .stats {
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
 }
 
 .stats .stats-heading {
@@ -389,6 +395,47 @@ code, pre {
     margin: 0 10px;
 }
 
+/* Animation */
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop{
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom{
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* Tablets and under */
 @media (max-width: 768px) {
     .grid,
@@ -409,11 +456,13 @@ code, pre {
     .hero-text {
         text-align: center;
         margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
     }
 
     .hero-form {
         justify-self: center;
         margin: auto;
+        animation: slideInFromBottom 1s ease-in;
     }
 
     .print .grid > *:first-child {
