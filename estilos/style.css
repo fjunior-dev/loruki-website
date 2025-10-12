@@ -509,3 +509,11 @@ code, pre {
     }
 
 }
+
+@media (min-width: 370px) {
+    .hero-form {
+       top: 60px;
+       height: 350px;
+       width: 365px;
+    }
+}
