@@ -212,6 +212,38 @@ img {
     color: #333;
 }
 
+.bg-primary a, 
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
+
+
+/* Text Sizes */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+
 .text-center {
     text-align: center;
 }
@@ -253,3 +285,30 @@ img {
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
+
+/* Lang */
+.lang .flex {
+    flex-wrap: wrap;
+}
+
+.lang .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.lang .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lang .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Footer */
+
+.footer .social a {
+    margin: 0 10px;
+}
+
