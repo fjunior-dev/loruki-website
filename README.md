@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="./logo-cinza.png" alt="fjunior-dev logo" width="300"/>
+</p>
+
 # ☁️ Loruki – Cloud Hosting for Everyone
 
 **Educational Front-End Project** – A simulated cloud hosting platform landing page built with HTML5, CSS3, and responsive design principles.
